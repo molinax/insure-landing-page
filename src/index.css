@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .transition-c-200 {
+    @apply transition-colors duration-200 ease-out
+  }
+
+  .btn {
+    @apply transition-c-200 cursor-pointer text-very-light-gray border-2 border-very-light-gray p-1 hover:bg-very-light-gray hover:text-very-dark-violet;
+  }
+
+  .btn-dark {
+    @apply btn text-dark-violet border-dark-violet hover:bg-dark-violet hover:text-very-light-gray hover:border-dark-violet;
+  }
+
+  .anchor {
+    @apply transition-c-200 text-very-light-gray cursor-pointer hover:text-dark-grayish-violet;
+  }
+
+  .anchor-dark {
+    @apply anchor text-dark-violet hover:text-dark-grayish-violet
+  }
+
+  .icon {
+    @apply transition-c-200 text-dark-grayish-violet hover:cursor-pointer hover:text-very-dark-violet;
+  }
+}
+
+* {
+  font-family: 'Karla', serif;
+}
+
+body {
+  overflow-x: hidden;
+}
